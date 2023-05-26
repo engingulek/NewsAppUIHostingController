@@ -6,27 +6,24 @@
 //
 
 import SwiftUI
-
+import Kingfisher
 struct NewsCell: View {
-    let article : Articles?
+    let article : News?
     var body: some View {
         HStack(spacing:30) {
-            Image(systemName: "newspaper.fill")
+            KFImage.url(URL(string: article!.urlToImage))
                 .resizable()
                 .scaledToFit()
-                .frame(width: 80,height: 80)
+                .frame(width: 100,height: 150)
             
-            VStack(spacing: 10){
-                Text("Tesla accused of ignoring customer complaints over autopilot safety")
+     
+                Text(article!.title)
                     .font(.callout)
                     .fontWeight(.bold)
                     .lineLimit(3)
                 
                     .multilineTextAlignment(.center)
-                Text("Drivers claim cars ‘too dangerous for the road’ in documents leaked by whistleblowers")
-                    .font(.footnote)
-                    .multilineTextAlignment(.center)
-            }
+            
         }.padding(.horizontal,5)
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D58FA172A2131E1001F38DE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7D58FA162A2131E1001F38DE /* Kingfisher */; };
+		7D58FA1A2A213388001F38DE /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58FA192A213388001F38DE /* DetailsView.swift */; };
 		7DC8E9F42A20DC9300070282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8E9F32A20DC9300070282 /* AppDelegate.swift */; };
 		7DC8E9F62A20DC9300070282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8E9F52A20DC9300070282 /* SceneDelegate.swift */; };
 		7DC8E9F82A20DC9300070282 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8E9F72A20DC9300070282 /* HomePageController.swift */; };
@@ -17,9 +19,14 @@
 		7DC8EA132A20E29600070282 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8EA122A20E29600070282 /* Articles.swift */; };
 		7DC8EA1A2A20FE8600070282 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8EA192A20FE8600070282 /* HomePageView.swift */; };
 		7DC8EA1C2A2102C500070282 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8EA1B2A2102C500070282 /* NewsCell.swift */; };
+		7DC8EA1F2A211D6B00070282 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8EA1E2A211D6B00070282 /* RequestType.swift */; };
+		7DC8EA212A211DBB00070282 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8EA202A211DBB00070282 /* Network.swift */; };
+		7DC8EA232A21267100070282 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8EA222A21267100070282 /* ServiceManager.swift */; };
+		7DC8EA292A212BBD00070282 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC8EA282A212BBD00070282 /* HomePageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D58FA192A213388001F38DE /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		7DC8E9F02A20DC9300070282 /* NewsAppUIHostingController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAppUIHostingController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC8E9F32A20DC9300070282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DC8E9F52A20DC9300070282 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +36,10 @@
 		7DC8EA122A20E29600070282 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		7DC8EA192A20FE8600070282 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		7DC8EA1B2A2102C500070282 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		7DC8EA1E2A211D6B00070282 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		7DC8EA202A211DBB00070282 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		7DC8EA222A21267100070282 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		7DC8EA282A212BBD00070282 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D58FA172A2131E1001F38DE /* Kingfisher in Frameworks */,
 				7DC8EA112A20DF5000070282 /* RxSwift in Frameworks */,
 				7DC8EA0F2A20DF5000070282 /* RxCocoa in Frameworks */,
 				7DC8EA0C2A20DF2D00070282 /* Alamofire in Frameworks */,
@@ -45,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D58FA182A213360001F38DE /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				7D58FA192A213388001F38DE /* DetailsView.swift */,
+			);
+			path = DetailPage;
+			sourceTree = "<group>";
+		};
 		7DC8E9E72A20DC9300070282 = {
 			isa = PBXGroup;
 			children = (
@@ -65,12 +85,13 @@
 		7DC8E9F22A20DC9300070282 /* NewsAppUIHostingController */ = {
 			isa = PBXGroup;
 			children = (
+				7D58FA182A213360001F38DE /* DetailPage */,
+				7DC8EA1D2A2117CA00070282 /* manager */,
 				7DC8EA092A20DD8500070282 /* homePage */,
 				7DC8E9F32A20DC9300070282 /* AppDelegate.swift */,
 				7DC8E9F52A20DC9300070282 /* SceneDelegate.swift */,
 				7DC8E9FC2A20DC9400070282 /* Assets.xcassets */,
 				7DC8EA012A20DC9400070282 /* Info.plist */,
-				7DC8EA122A20E29600070282 /* Articles.swift */,
 			);
 			path = NewsAppUIHostingController;
 			sourceTree = "<group>";
@@ -78,9 +99,10 @@
 		7DC8EA092A20DD8500070282 /* homePage */ = {
 			isa = PBXGroup;
 			children = (
-				7DC8E9F72A20DC9300070282 /* HomePageController.swift */,
-				7DC8EA1B2A2102C500070282 /* NewsCell.swift */,
-				7DC8EA192A20FE8600070282 /* HomePageView.swift */,
+				7DC8EA272A212B9300070282 /* model */,
+				7DC8EA262A212B5300070282 /* viewModel */,
+				7DC8EA252A212B4600070282 /* controller */,
+				7DC8EA242A212B3D00070282 /* view */,
 			);
 			path = homePage;
 			sourceTree = "<group>";
@@ -90,6 +112,49 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DC8EA1D2A2117CA00070282 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				7DC8EA1E2A211D6B00070282 /* RequestType.swift */,
+				7DC8EA202A211DBB00070282 /* Network.swift */,
+				7DC8EA222A21267100070282 /* ServiceManager.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		7DC8EA242A212B3D00070282 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7DC8EA1B2A2102C500070282 /* NewsCell.swift */,
+				7DC8EA192A20FE8600070282 /* HomePageView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7DC8EA252A212B4600070282 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DC8E9F72A20DC9300070282 /* HomePageController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7DC8EA262A212B5300070282 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7DC8EA282A212BBD00070282 /* HomePageViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		7DC8EA272A212B9300070282 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7DC8EA122A20E29600070282 /* Articles.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +177,7 @@
 				7DC8EA0B2A20DF2D00070282 /* Alamofire */,
 				7DC8EA0E2A20DF5000070282 /* RxCocoa */,
 				7DC8EA102A20DF5000070282 /* RxSwift */,
+				7D58FA162A2131E1001F38DE /* Kingfisher */,
 			);
 			productName = NewsAppUIHostingController;
 			productReference = 7DC8E9F02A20DC9300070282 /* NewsAppUIHostingController.app */;
@@ -144,6 +210,7 @@
 			packageReferences = (
 				7DC8EA0A2A20DF2D00070282 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				7DC8EA0D2A20DF5000070282 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				7D58FA152A2131E1001F38DE /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 7DC8E9F12A20DC9300070282 /* Products */;
 			projectDirPath = "";
@@ -171,8 +238,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DC8EA132A20E29600070282 /* Articles.swift in Sources */,
+				7DC8EA212A211DBB00070282 /* Network.swift in Sources */,
 				7DC8EA1C2A2102C500070282 /* NewsCell.swift in Sources */,
+				7DC8EA1F2A211D6B00070282 /* RequestType.swift in Sources */,
+				7DC8EA292A212BBD00070282 /* HomePageViewModel.swift in Sources */,
 				7DC8E9F82A20DC9300070282 /* HomePageController.swift in Sources */,
+				7D58FA1A2A213388001F38DE /* DetailsView.swift in Sources */,
+				7DC8EA232A21267100070282 /* ServiceManager.swift in Sources */,
 				7DC8E9F42A20DC9300070282 /* AppDelegate.swift in Sources */,
 				7DC8EA1A2A20FE8600070282 /* HomePageView.swift in Sources */,
 				7DC8E9F62A20DC9300070282 /* SceneDelegate.swift in Sources */,
@@ -374,6 +446,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7D58FA152A2131E1001F38DE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		7DC8EA0A2A20DF2D00070282 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -393,6 +473,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7D58FA162A2131E1001F38DE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D58FA152A2131E1001F38DE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		7DC8EA0B2A20DF2D00070282 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7DC8EA0A2A20DF2D00070282 /* XCRemoteSwiftPackageReference "Alamofire" */;

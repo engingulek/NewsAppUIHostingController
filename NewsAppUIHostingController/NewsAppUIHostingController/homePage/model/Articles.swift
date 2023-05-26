@@ -7,6 +7,14 @@
 
 import Foundation
 
+
+class DataResult<M:Codable> : Codable {
+    let status : String?
+    let totalResults : Int?
+    let articles : [M]?
+}
+
+
 class SourceData : Codable {
     let id : String?
     let name : String?
