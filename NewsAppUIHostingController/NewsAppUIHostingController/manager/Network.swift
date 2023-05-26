@@ -22,7 +22,7 @@ extension Network : TargetType {
     var path: String {
         switch self {
         case .unitedStates:
-            return "us&apiKey=b7d23e017b254989b0df7079be8a9682"
+            return "us&apiKey=?"
   
         }
     }
